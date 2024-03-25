@@ -16,5 +16,5 @@ Feature: Testing of Registration form
     And I click button Submit
     Then I see a logged-in Account Page with my name and email
     Examples:
-      | firstName | lastName | dateOfBirth | email       | password  | passwordConfirmation |
-      | Sam       | Smith    | 01.01.2000  | a30@aaa.aaa | 111111111 | 111111111            |
+      | firstName | lastName | dateOfBirth | email        | password  | passwordConfirmation |
+      | Sam       | Smith    | 01.01.2000  | a104@aaa.aaa | 111111111 | 111111111            |

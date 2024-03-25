@@ -20,5 +20,5 @@ Feature: Testing of Registration form
     And I click button Submit to log in
     Then I see a logged-in Account Page with my name and email after logging in with new password
     Examples:
-      | email       | oldPassword | newPassword |
-      | a30@aaa.aaa | 111111111   | 222222222   |
+      | email        | oldPassword | newPassword |
+      | a104@aaa.aaa | 111111111   | 222222222   |

@@ -1,6 +1,7 @@
 package step_definitions;
 
 import driver_factory.DriverSetupLogin;
+import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -36,6 +37,14 @@ public class LogInPageStepDefinition {
         driver = DriverSetupLogin.startDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
+    }
+
+    @After
+    public void closeDriver() {
+        // Закрытие драйвера после каждого сценария
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Given("User is on Log in Page for logging in")
