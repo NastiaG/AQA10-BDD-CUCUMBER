@@ -55,7 +55,6 @@ public class RegistrationPageStepDefinition {
 
     @After
     public void tearDown() {
-        // Закрытие драйвера после каждого сценария
         if (driver != null) {
             driver.quit();
         }

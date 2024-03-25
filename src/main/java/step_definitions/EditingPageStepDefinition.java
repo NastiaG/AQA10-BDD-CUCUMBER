@@ -49,7 +49,6 @@ public class EditingPageStepDefinition {
 
     @After
     public void closeDriver() {
-        // Закрытие драйвера после каждого сценария
         if (driver != null) {
             driver.quit();
         }
